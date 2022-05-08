@@ -4,7 +4,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: black;
+    background: rgb(251, 248, 248);
 }
 
 input {
@@ -19,7 +19,7 @@ input {
 
 
 .main {
-    display: inline-block;
+    display: flex;
 }
 
 .maincolor {
@@ -31,6 +31,10 @@ input {
     height: 67px;
 }
 
+.wrapper-calculator {
+    display: flex;
+    flex-direction: column;
+}
 
 .text1 {
     width: 24px;
@@ -82,4 +86,41 @@ label {
     font-size: 30px;
     font: arial ;
     font-weight: bold;
+}
+
+
+@media (max-width: 450px) {
+
+   body {
+       
+       
+   }
+
+    .main {
+        display: flex;
+    }
+    form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+
+    .num {
+        width: 40px;
+        height: 39px;
+
+    }
+
+    .text {
+        width: 290px;
+        border-radius: 10px;
+    }
+
+    .text1 {
+        width: 290px;
+        border-radius: 10px;
+    }
+    .calcula-texto {
+        display: none;
+    }
 }
